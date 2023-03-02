@@ -1,4 +1,4 @@
-# Micros I Semestre 2023}
+# Micros I Semestre 2023
 
 repositorio general de los proyectos y tareas de micros
 
