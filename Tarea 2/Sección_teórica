@@ -1,0 +1,48 @@
+1) ¿Qué es el Shell de Linux?
+
+Es el intérprete de comandos, la interfaz entre el usuario y el sistema operativo. Este actúa como un intermediario entre el sistema operativo y el usuario. Para usuarios de Windows, sería el equivalente al cmd. Aquí se puede escribir comandos que el sistema operativo interpreta y retorna el resultado correspondiente en formato de texto.
+
+
+2) ¿Qué es gcc?
+
+GCC significa "GNU Compiler Collection” y es un compilador integrado del proyecto GNU para C, C++, Objective C y Fortran, este es capaz de recibir un programa fuente en cualquiera de los lenguajes mencionados anteriormente y generar un programa ejecutable binario en el lenguaje máquina seleccionado. 
+
+
+3) ¿Cuál es la diferencia entre gcc y g++?
+
+G++ es un paquete de compiladores de C++, por lo que forma parte de la colección de compiladores de GNU.
+
+
+4) ¿Cómo se compila un programa en C utilizando el compilador gcc desde la terminal de Linux? Brinde un ejemplo.
+
+$ gcc –version comprobar que está instalado GCC. Necesario que asi sea. 
+$ gcc nombredearchivo.c -o nombre de ejecutable deseado El script es el “.c”. El ejecutable creado se utiliza para correr dicho script.
+
+
+5) ¿Por qué cuando se compila un programa en C desde la terminal de Linux, donde el programa utiliza la biblioteca math.h y pthread.h, se requiere adicionar al comando de compilación la bandera -lm y                 -lpthread? ¿Existen otros casos para otras bibliotecas o esto solo sucede con estas bibliotecas?, de ser verdadera la afirmación muestre al menos tres ejemplos de bibliotecas que requieren la utilización de banderas para su exitosa compilación?
+
+Para reducir el overhead que representa el espacio utilizado en guardar librerías y sus respectivas funciones, los códigos en C requieren nombrar las librerías a utilizas para hacer notar el conjunto de funciones que se utiliza en cada script. La mayoría de las librerías, exceptuando las más básicas, tienen esta particularidad. Ejemplos: - Biblioteca complex. - Biblioteca stdbool. - Cualquier biblioteca creada por el usuario; se le debe indicar la ubicación exacta de la biblioteca.
+
+
+6) ¿Cómo se ejecuta un programa en C ya compilado desde la terminal de Linux?
+
+En el terminal de Linux, tras escribir la dirección en que se encuentra el programa se escribe el comando “./”, seguido del nombre escogido del ejecutable.
+
+
+
+7) ¿Cómo se compila y ejecuta un programa en Python desde la terminal de Linux, como se conocen este tipo de lenguajes de programación?
+
+Lenguajes interpretados es la categoría a la que pertenece este grupo y la forma de ejecutar uno en la terminal de linux es python nombredearchivo.py python -i nombredearchivo.py permite continuar en la misma sesion.
+
+
+8) ¿Para qué sirve el protocolo SSH?
+
+SSH (Secure SHell) es un protocolo para crear comunicaciones seguras entre dos sistemas usando una arquitectura cliente/servidor y que además permite que los usuarios se conecten a un host de forma remota, como por ejemplo conectar el PC con la Raspberry Pi.
+
+9) Describa las diferencias entre las tarjetas basadas en microprocesador Raspberry Pi 2 y Raspberry Pi 3.
+
+Respecto a entras y salidas, existen pocas diferencias. Mientras que en relación a sistemas de comunicación, la Raspberry Pi 3 tiene integrados los módulos de Wifi y Bluetooth a diferencia de su predecesor que los requiere como componentes externos. Por el lado del hardware, la Raspberry Pi 2 utiliza un procesador de arquitectura Cortex-A7 (32bit) a un Cortex-A53 (64bit), lo que representa un aumento en velocidad. Ambos modelos utilizan el mismo GPU, sin embargo, en la Raspberry Pi 3, este se encuentra operando a una frecuencia mayor. Por último, Ambas tarjetas cuentan con 1GB de RAM DDR2, sin embargo, la memoria en el modelo más reciente duplica en velocidad al de su predecesor.
+
+10) Defina los siguientes conceptos de programación por hilos: Thread, lock, join.
+
+Thread: En español, hilo, es la agrupación de una sección de programa, y el conjunto de registros del procesador que utiliza. El conjunto de registros y la pila de cada hilo se llama contexto. - Lock: herramienta para administrar los bloqueos necesarios en ciertas secciones de código para evitar que los hilos modifiquen variables compartidas de manera simultánea. La función acquire() inicia el bloqueo por parte de un hilo para leer y actualizar datos. Hasta recibir la instrucción release() se produce el desbloqueo y otro hilo puede bloquear y modificar variables. - Join: al dividir una tarea, o al tener una tarea dependiente de otra, se requiere que unos de los hilos “espere” la finalización del otro. La función join sirve para eso. 
